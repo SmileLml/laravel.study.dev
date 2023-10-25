@@ -69,6 +69,7 @@ class Application extends SymfonyApplication implements ApplicationContract
 
         $this->laravel = $laravel;
         $this->events = $events;
+
         $this->setAutoExit(false);
         $this->setCatchExceptions(false);
 
@@ -126,6 +127,7 @@ class Application extends SymfonyApplication implements ApplicationContract
      */
     protected function bootstrap()
     {
+        dump(static::$bootstrappers);
         foreach (static::$bootstrappers as $bootstrapper) {
             $bootstrapper($this);
         }

@@ -61,12 +61,14 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Application Timezone
+    | Application Timezone 时区
     |--------------------------------------------------------------------------
     |
     | Here you may specify the default timezone for your application, which
     | will be used by the PHP date and date-time functions. We have gone
     | ahead and set this to a sensible default for you out of the box.
+    | 这里可以为应用程序指定默认时区,PHP日期和日期-时间函数将使用该时区.
+    | 我们已经将其设置为一个合理的默认值,以便您开箱即用.
     |
     */
 
@@ -75,11 +77,14 @@ return [
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
+    | 应用程序区域设置配置
     |--------------------------------------------------------------------------
     |
     | The application locale determines the default locale that will be used
     | by the translation service provider. You are free to set this value
     | to any of the locales which will be supported by the application.
+    | 应用程序语言环境决定了翻译服务提供者将使用的默认语言环境.
+    | 您可以自由地将此值设置为应用程序支持的任何区域设置.
     |
     */
 
@@ -88,11 +93,14 @@ return [
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
+    | 备用
     |--------------------------------------------------------------------------
     |
     | The fallback locale determines the locale to use when the current one
     | is not available. You may change the value to correspond to any of
     | the language folders that are provided through your application.
+    | 备用区域设置确定当前区域设置不可用时要使用的区域设置.
+    | 您可以将该值更改为与通过应用程序提供的任何语言文件夹相对应.
     |
     */
 
@@ -106,6 +114,8 @@ return [
     | This locale will be used by the Faker PHP library when generating fake
     | data for your database seeds. For example, this will be used to get
     | localized telephone numbers, street address information and more.
+    | Faker PHP库在为数据库种子生成虚假数据时将使用该区域设置.
+    | 例如,这将用于获取本地化的电话号码、街道地址信息等.
     |
     */
 

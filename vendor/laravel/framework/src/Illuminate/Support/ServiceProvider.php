@@ -21,6 +21,7 @@ abstract class ServiceProvider
 
     /**
      * All of the registered booting callbacks.
+     * 所有已注册的引导回调.
      *
      * @var array
      */
@@ -124,6 +125,7 @@ abstract class ServiceProvider
 
     /**
      * Merge the given configuration with the existing configuration.
+     * 将给定的配置与现有配置合并.
      *
      * @param  string  $path
      * @param  string  $key
@@ -142,6 +144,7 @@ abstract class ServiceProvider
 
     /**
      * Load the given routes file if routes are not already cached.
+     * 如果路由尚未缓存,则加载给定的路由文件.
      *
      * @param  string  $path
      * @return void
@@ -253,6 +256,7 @@ abstract class ServiceProvider
 
     /**
      * Setup an after resolving listener, or fire immediately if already resolved.
+     * 设置一个解析后的监听器,如果已经解析,则立即触发.
      *
      * @param  string  $name
      * @param  callable  $callback
@@ -269,6 +273,7 @@ abstract class ServiceProvider
 
     /**
      * Register paths to be published by the publish command.
+     * 使用publish命令注册要发布的路径.
      *
      * @param  array  $paths
      * @param  mixed  $groups
@@ -287,6 +292,7 @@ abstract class ServiceProvider
 
     /**
      * Ensure the publish array for the service provider is initialized.
+     * 确保初始化了服务提供者的发布数组.
      *
      * @param  string  $class
      * @return void
@@ -318,6 +324,7 @@ abstract class ServiceProvider
 
     /**
      * Get the paths to publish.
+     * 获取发布路径.
      *
      * @param  string|null  $provider
      * @param  string|null  $group

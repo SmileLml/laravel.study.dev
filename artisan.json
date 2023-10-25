@@ -1,0 +1,23 @@
+string(49) "Symfony\Component\Translation\TranslatorInterface"
+string(4) ".php"
+int(497)
+
+Warning: Uncaught Error: Object of class UnwindExit could not be converted to string in /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/nesbot/carbon/src/Carbon/Traits/Options.php:27
+Stack trace:
+#0 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(580): include()
+#1 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(429): Composer\Autoload\{closure}()
+#2 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/nesbot/carbon/src/Carbon/Traits/Date.php(527): Composer\Autoload\ClassLoader->loadClass()
+#3 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(580): include('/Users/smile/Wo...')
+#4 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(429): Composer\Autoload\{closure}()
+#5 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/nesbot/carbon/src/Carbon/Carbon.php(510): Composer\Autoload\ClassLoader->loadClass()
+#6 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(580): include('/Users/smile/Wo...')
+#7 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(429): Composer\Autoload\{closure}()
+#8 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/laravel/framework/src/Illuminate/Support/Carbon.php(11): Composer\Autoload\ClassLoader->loadClass()
+#9 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(580): include('/Users/smile/Wo...')
+#10 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/composer/ClassLoader.php(429): Composer\Autoload\{closure}()
+#11 /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(192): Composer\Autoload\ClassLoader->loadClass()
+#12 /Users/smile/WorkSpace/Laravel/study.laravel.dev/artisan(35): Illuminate\Foundation\Console\Kernel->handle()
+#13 {main}
+  thrown in /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/nesbot/carbon/src/Carbon/Traits/Options.php on line 27
+
+Fatal error: During class fetch: Uncaught  in /Users/smile/WorkSpace/Laravel/study.laravel.dev/vendor/nesbot/carbon/src/Carbon/Traits/Options.php on line 27

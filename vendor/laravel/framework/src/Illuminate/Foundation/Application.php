@@ -49,6 +49,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Indicates if the application has been bootstrapped before.
+     * 指示应用程序以前是否引导过.
      *
      * @var bool
      */
@@ -91,6 +92,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * The names of the loaded service providers.
+     * 已加载的服务提供者的名称.
      *
      * @var array
      */
@@ -98,6 +100,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * The deferred services and their providers.
+     * 延迟的服务及其提供者.
      *
      * @var array
      */
@@ -226,6 +229,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
         $this->instance('app', $this);
 
         $this->instance(Container::class, $this);
+
         $this->singleton(Mix::class);
 
         $this->singleton(PackageManifest::class, fn () => new PackageManifest(
@@ -333,6 +337,16 @@ class Application extends Container implements ApplicationContract, CachesConfig
      */
     protected function bindPathsInContainer()
     {
+        /**
+         * 可使用useXXXXPath():
+         *      useAppPath()
+         *      useBootstrapPath()
+         *      useConfigPath()
+         *      useDatabasePath()
+         *      useLangPath()
+         *      usePublicPath()
+         *      useStoragePath()
+         */
         $this->instance('path', $this->path());
         $this->instance('path.base', $this->basePath());
         $this->instance('path.config', $this->configPath());
@@ -404,6 +418,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Set the bootstrap file directory.
+     * 设置引导文件目录.
      *
      * @param  string  $path
      * @return $this
@@ -579,6 +594,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Join the given paths together.
+     * 将给定的路径连接在一起.
      *
      * @param  string  $basePath
      * @param  string  $path
@@ -684,6 +700,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Detect the application's current environment.
+     * 检测并设置应用程序的当前环境.
      *
      * @param  \Closure  $callback
      * @return string
@@ -939,6 +956,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Load the deferred provider if the given type is a deferred service and the instance has not been loaded.
+     * 如果给定的类型是延迟服务并且实例尚未加载.则加载延迟提供程序.
      *
      * @param  string  $abstract
      * @return void
@@ -1159,6 +1177,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Normalize a relative or absolute path to a cache file.
+     * 规范化缓存文件的相对或绝对路径.
      *
      * @param  string  $key
      * @param  string  $default
@@ -1210,6 +1229,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Throw an HttpException with the given data.
+     * 用给定的数据抛出一个HttpException.
      *
      * @param  int  $code
      * @param  string  $message
@@ -1230,6 +1250,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Register a terminating callback with the application.
+     * 向应用程序注册一个终止回调.
      *
      * @param  callable|string  $callback
      * @return $this
@@ -1243,6 +1264,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Terminate the application.
+     * 终止应用程序.
      *
      * @return void
      */
@@ -1269,6 +1291,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Determine if the given service provider is loaded.
+     * 确定是否加载了给定的服务提供程序.
      *
      * @param  string  $provider
      * @return bool
@@ -1323,6 +1346,7 @@ class Application extends Container implements ApplicationContract, CachesConfig
 
     /**
      * Configure the real-time facade namespace.
+     * 配置实时外观名称空间.
      *
      * @param  string  $namespace
      * @return void
@@ -1494,7 +1518,6 @@ class Application extends Container implements ApplicationContract, CachesConfig
         }
 
         $composer = json_decode(file_get_contents($this->basePath('composer.json')), true);
-
         foreach ((array) data_get($composer, 'autoload.psr-4') as $namespace => $path) {
             foreach ((array) $path as $pathChoice) {
                 if (realpath($this->path()) === realpath($this->basePath($pathChoice))) {

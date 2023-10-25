@@ -1,0 +1,166 @@
+array:7 [ // vendor/laravel/framework/src/Illuminate/Console/Application.php:130
+  0 => Closure($artisan) {#228
+    class: "Laravel\Sanctum\SanctumServiceProvider"
+    this: Laravel\Sanctum\SanctumServiceProvider {#76 …}
+    use: {
+      $commands: array:1 [
+        0 => "Laravel\Sanctum\Console\Commands\PruneExpired"
+      ]
+    }
+  }
+  1 => Closure($artisan) {#245
+    class: "NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider"
+    this: NunoMaduro\Collision\Adapters\Laravel\CollisionServiceProvider {#74 …}
+    use: {
+      $commands: array:1 [
+        0 => "NunoMaduro\Collision\Adapters\Laravel\Commands\TestCommand"
+      ]
+    }
+  }
+  2 => Closure($artisan) {#397
+    class: "Illuminate\Foundation\Providers\ArtisanServiceProvider"
+    this: Illuminate\Foundation\Providers\ArtisanServiceProvider {#304 …}
+    use: {
+      $commands: array:92 [
+        0 => "Illuminate\Foundation\Console\AboutCommand"
+        1 => "Illuminate\Cache\Console\ClearCommand"
+        2 => "Illuminate\Cache\Console\ForgetCommand"
+        3 => "Illuminate\Foundation\Console\ClearCompiledCommand"
+        4 => "Illuminate\Auth\Console\ClearResetsCommand"
+        5 => "Illuminate\Foundation\Console\ConfigCacheCommand"
+        6 => "Illuminate\Foundation\Console\ConfigClearCommand"
+        7 => "Illuminate\Foundation\Console\ConfigShowCommand"
+        8 => "Illuminate\Database\Console\DbCommand"
+        9 => "Illuminate\Database\Console\MonitorCommand"
+        10 => "Illuminate\Database\Console\PruneCommand"
+        11 => "Illuminate\Database\Console\ShowCommand"
+        12 => "Illuminate\Database\Console\TableCommand"
+        13 => "Illuminate\Database\Console\WipeCommand"
+        14 => "Illuminate\Foundation\Console\DownCommand"
+        15 => "Illuminate\Foundation\Console\EnvironmentCommand"
+        16 => "Illuminate\Foundation\Console\EnvironmentDecryptCommand"
+        17 => "Illuminate\Foundation\Console\EnvironmentEncryptCommand"
+        18 => "Illuminate\Foundation\Console\EventCacheCommand"
+        19 => "Illuminate\Foundation\Console\EventClearCommand"
+        20 => "Illuminate\Foundation\Console\EventListCommand"
+        21 => "Illuminate\Foundation\Console\KeyGenerateCommand"
+        22 => "Illuminate\Foundation\Console\OptimizeCommand"
+        23 => "Illuminate\Foundation\Console\OptimizeClearCommand"
+        24 => "Illuminate\Foundation\Console\PackageDiscoverCommand"
+        25 => "Illuminate\Cache\Console\PruneStaleTagsCommand"
+        26 => "Illuminate\Queue\Console\ClearCommand"
+        27 => "Illuminate\Queue\Console\ListFailedCommand"
+        28 => "Illuminate\Queue\Console\FlushFailedCommand"
+        29 => "Illuminate\Queue\Console\ForgetFailedCommand"
+        30 => "Illuminate\Queue\Console\ListenCommand"
+        31 => "Illuminate\Queue\Console\MonitorCommand"
+        32 => "Illuminate\Queue\Console\PruneBatchesCommand"
+        33 => "Illuminate\Queue\Console\PruneFailedJobsCommand"
+        34 => "Illuminate\Queue\Console\RestartCommand"
+        35 => "Illuminate\Queue\Console\RetryCommand"
+        36 => "Illuminate\Queue\Console\RetryBatchCommand"
+        37 => "Illuminate\Queue\Console\WorkCommand"
+        38 => "Illuminate\Foundation\Console\RouteCacheCommand"
+        39 => "Illuminate\Foundation\Console\RouteClearCommand"
+        40 => "Illuminate\Foundation\Console\RouteListCommand"
+        41 => "Illuminate\Database\Console\DumpCommand"
+        42 => "Illuminate\Database\Console\Seeds\SeedCommand"
+        43 => "Illuminate\Console\Scheduling\ScheduleFinishCommand"
+        44 => "Illuminate\Console\Scheduling\ScheduleListCommand"
+        45 => "Illuminate\Console\Scheduling\ScheduleRunCommand"
+        46 => "Illuminate\Console\Scheduling\ScheduleClearCacheCommand"
+        47 => "Illuminate\Console\Scheduling\ScheduleTestCommand"
+        48 => "Illuminate\Console\Scheduling\ScheduleWorkCommand"
+        49 => "Illuminate\Console\Scheduling\ScheduleInterruptCommand"
+        50 => "Illuminate\Database\Console\ShowModelCommand"
+        51 => "Illuminate\Foundation\Console\StorageLinkCommand"
+        52 => "Illuminate\Foundation\Console\UpCommand"
+        53 => "Illuminate\Foundation\Console\ViewCacheCommand"
+        54 => "Illuminate\Foundation\Console\ViewClearCommand"
+        55 => "Illuminate\Cache\Console\CacheTableCommand"
+        56 => "Illuminate\Foundation\Console\CastMakeCommand"
+        57 => "Illuminate\Foundation\Console\ChannelListCommand"
+        58 => "Illuminate\Foundation\Console\ChannelMakeCommand"
+        59 => "Illuminate\Foundation\Console\ComponentMakeCommand"
+        60 => "Illuminate\Foundation\Console\ConsoleMakeCommand"
+        61 => "Illuminate\Routing\Console\ControllerMakeCommand"
+        62 => "Illuminate\Foundation\Console\DocsCommand"
+        63 => "Illuminate\Foundation\Console\EventGenerateCommand"
+        64 => "Illuminate\Foundation\Console\EventMakeCommand"
+        65 => "Illuminate\Foundation\Console\ExceptionMakeCommand"
+        66 => "Illuminate\Database\Console\Factories\FactoryMakeCommand"
+        67 => "Illuminate\Foundation\Console\JobMakeCommand"
+        68 => "Illuminate\Foundation\Console\LangPublishCommand"
+        69 => "Illuminate\Foundation\Console\ListenerMakeCommand"
+        70 => "Illuminate\Foundation\Console\MailMakeCommand"
+        71 => "Illuminate\Routing\Console\MiddlewareMakeCommand"
+        72 => "Illuminate\Foundation\Console\ModelMakeCommand"
+        73 => "Illuminate\Foundation\Console\NotificationMakeCommand"
+        74 => "Illuminate\Notifications\Console\NotificationTableCommand"
+        75 => "Illuminate\Foundation\Console\ObserverMakeCommand"
+        76 => "Illuminate\Foundation\Console\PolicyMakeCommand"
+        77 => "Illuminate\Foundation\Console\ProviderMakeCommand"
+        78 => "Illuminate\Queue\Console\FailedTableCommand"
+        79 => "Illuminate\Queue\Console\TableCommand"
+        80 => "Illuminate\Queue\Console\BatchesTableCommand"
+        81 => "Illuminate\Foundation\Console\RequestMakeCommand"
+        82 => "Illuminate\Foundation\Console\ResourceMakeCommand"
+        83 => "Illuminate\Foundation\Console\RuleMakeCommand"
+        84 => "Illuminate\Foundation\Console\ScopeMakeCommand"
+        85 => "Illuminate\Database\Console\Seeds\SeederMakeCommand"
+        86 => "Illuminate\Session\Console\SessionTableCommand"
+        87 => "Illuminate\Foundation\Console\ServeCommand"
+        88 => "Illuminate\Foundation\Console\StubPublishCommand"
+        89 => "Illuminate\Foundation\Console\TestMakeCommand"
+        90 => "Illuminate\Foundation\Console\VendorPublishCommand"
+        91 => "Illuminate\Foundation\Console\ViewMakeCommand"
+      ]
+    }
+  }
+  3 => Closure($artisan) {#411
+    class: "Illuminate\Database\MigrationServiceProvider"
+    this: Illuminate\Database\MigrationServiceProvider {#399 …}
+    use: {
+      $commands: array:8 [
+        0 => "Illuminate\Database\Console\Migrations\MigrateCommand"
+        1 => "Illuminate\Database\Console\Migrations\FreshCommand"
+        2 => "Illuminate\Database\Console\Migrations\InstallCommand"
+        3 => "Illuminate\Database\Console\Migrations\RefreshCommand"
+        4 => "Illuminate\Database\Console\Migrations\ResetCommand"
+        5 => "Illuminate\Database\Console\Migrations\RollbackCommand"
+        6 => "Illuminate\Database\Console\Migrations\StatusCommand"
+        7 => "Illuminate\Database\Console\Migrations\MigrateMakeCommand"
+      ]
+    }
+  }
+  4 => Closure($artisan) {#439
+    class: "Laravel\Sail\SailServiceProvider"
+    this: Laravel\Sail\SailServiceProvider {#437 …}
+    use: {
+      $commands: array:3 [
+        0 => "Laravel\Sail\Console\InstallCommand"
+        1 => "Laravel\Sail\Console\AddCommand"
+        2 => "Laravel\Sail\Console\PublishCommand"
+      ]
+    }
+  }
+  5 => Closure($artisan) {#441
+    class: "Laravel\Tinker\TinkerServiceProvider"
+    this: Laravel\Tinker\TinkerServiceProvider {#438 …}
+    use: {
+      $commands: array:1 [
+        0 => "command.tinker"
+      ]
+    }
+  }
+  6 => Closure($artisan) {#445
+    class: "App\Console\Kernel"
+    this: App\Console\Kernel {#29 …}
+    use: {
+      $command: Illuminate\Foundation\Console\ClosureCommand {#443 …}
+    }
+  }
+]
+"Laravel\Sanctum\Console\Commands\PruneExpired" // vendor/laravel/framework/src/Illuminate/Console/Application.php:241
+null // vendor/laravel/framework/src/Illuminate/Console/Application.php:241
+false // vendor/laravel/framework/src/Illuminate/Console/Application.php:241

@@ -34,6 +34,7 @@ class LoadEnvironmentVariables
 
     /**
      * Detect if a custom environment file matching the APP_ENV exists.
+     * 检测是否存在与 APP_ENV 匹配的自定义环境文件
      *
      * @param  \Illuminate\Contracts\Foundation\Application  $app
      * @return void
@@ -51,7 +52,6 @@ class LoadEnvironmentVariables
         if (! $environment) {
             return;
         }
-
         $this->setEnvironmentFilePath(
             $app, $app->environmentFile().'.'.$environment
         );

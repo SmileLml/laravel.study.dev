@@ -6,6 +6,7 @@ interface Translator
 {
     /**
      * Get the translation for a given key.
+     * 获取给定键的翻译.
      *
      * @param  string  $key
      * @param  array  $replace
@@ -16,6 +17,7 @@ interface Translator
 
     /**
      * Get a translation according to an integer value.
+     * 根据整数值获取翻译.
      *
      * @param  string  $key
      * @param  \Countable|int|array  $number
@@ -27,6 +29,7 @@ interface Translator
 
     /**
      * Get the default locale being used.
+     * 获取正在使用的默认区域设置.
      *
      * @return string
      */
@@ -34,6 +37,7 @@ interface Translator
 
     /**
      * Set the default locale.
+     * 设置默认语言环境.
      *
      * @param  string  $locale
      * @return void

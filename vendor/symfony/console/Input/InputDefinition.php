@@ -16,6 +16,7 @@ use Symfony\Component\Console\Exception\LogicException;
 
 /**
  * A InputDefinition represents a set of valid command line arguments and options.
+ * InputDefinition 表示一组有效的命令行参数和选项.
  *
  * Usage:
  *

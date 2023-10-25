@@ -190,7 +190,6 @@ class Kernel implements KernelContract
     public function handle($input, $output = null)
     {
         $this->commandStartedAt = Carbon::now();
-
         try {
             if (in_array($input->getFirstArgument(), ['env:encrypt', 'env:decrypt'], true)) {
                 $this->bootstrapWithoutBootingProviders();
@@ -200,6 +199,7 @@ class Kernel implements KernelContract
 
             return $this->getArtisan()->run($input, $output);
         } catch (Throwable $e) {
+
             $this->reportException($e);
 
             $this->renderException($output, $e);
@@ -458,6 +458,7 @@ class Kernel implements KernelContract
 
     /**
      * Bootstrap the application without booting service providers.
+     * 在不引导服务提供者的情况下引导应用程序
      *
      * @return void
      */

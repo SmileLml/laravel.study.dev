@@ -16,6 +16,7 @@ use Symfony\Component\Console\Exception\RuntimeException;
 
 /**
  * InputInterface is the interface implemented by all input classes.
+ * InputInterface 是由所有输入类实现的接口。
  *
  * @author Fabien Potencier <fabien@symfony.com>
  *
@@ -26,14 +27,17 @@ interface InputInterface
 {
     /**
      * Returns the first argument from the raw parameters (not parsed).
+     * 返回原始参数中的第一个参数(未解析).
      */
     public function getFirstArgument(): ?string;
 
     /**
      * Returns true if the raw parameters (not parsed) contain a value.
+     * 如果原始参数(未解析)包含值,则返回true.
      *
-     * This method is to be used to introspect the input parameters
-     * before they have been validated. It must be used carefully.
+     * This method is to be used to introspect the input parameters before they have been validated.
+     * 此方法用于在验证输入参数之前对其进行内省.
+     * It must be used carefully.
      * Does not necessarily return the correct result for short options
      * when multiple flags are combined in the same option.
      *
@@ -44,6 +48,7 @@ interface InputInterface
 
     /**
      * Returns the value of a raw option (not parsed).
+     * 返回原始选项的值(未解析).
      *
      * This method is to be used to introspect the input parameters
      * before they have been validated. It must be used carefully.
@@ -60,6 +65,7 @@ interface InputInterface
 
     /**
      * Binds the current Input instance with the given arguments and options.
+     * 用给定的参数和选项绑定当前的Input实例.
      *
      * @return void
      *

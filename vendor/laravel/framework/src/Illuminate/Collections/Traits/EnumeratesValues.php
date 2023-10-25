@@ -457,6 +457,7 @@ trait EnumeratesValues
 
     /**
      * Partition the collection into two arrays using the given callback or key.
+     * 使用给定的回调或键将集合划分为两个数组.
      *
      * @param  (callable(TValue, TKey): bool)|TValue|string  $key
      * @param  TValue|string|null  $operator
@@ -830,6 +831,7 @@ trait EnumeratesValues
 
     /**
      * Create a collection of all elements that do not pass a given truth test.
+     * 创建一个未通过给定真值测试的所有元素的集合.
      *
      * @param  (callable(TValue, TKey): bool)|bool|TValue  $callback
      * @return static

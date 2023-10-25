@@ -143,8 +143,8 @@ class Kernel implements KernelContract
 
             $response = $this->sendRequestThroughRouter($request);
         } catch (Throwable $e) {
-            $this->reportException($e);
 
+            $this->reportException($e);
             $response = $this->renderException($request, $e);
         }
 
@@ -203,6 +203,7 @@ class Kernel implements KernelContract
 
     /**
      * Call the terminate method on any terminable middleware.
+     * 在任何可终止的中间件上调用terminate方法.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Illuminate\Http\Response  $response

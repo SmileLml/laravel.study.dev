@@ -220,7 +220,6 @@ class Dotenv
     public function load()
     {
         $entries = $this->parser->parse($this->store->read());
-
         return $this->loader->load($this->repository, $entries);
     }
 

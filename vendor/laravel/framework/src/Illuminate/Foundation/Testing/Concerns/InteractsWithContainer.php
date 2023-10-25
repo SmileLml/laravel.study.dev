@@ -185,6 +185,7 @@ trait InteractsWithContainer
 
     /**
      * Register an empty handler for Laravel Mix in the container.
+     * 在容器中为Laravel Mix注册一个空处理程序.
      *
      * @return $this
      */

@@ -29,6 +29,7 @@ class Util
 
     /**
      * Return the default value of the given value.
+     * 返回给定值的默认值.
      *
      * From global value() helper in Illuminate\Support.
      *
@@ -43,6 +44,7 @@ class Util
 
     /**
      * Get the class name of the given parameter's type, if possible.
+     * 如果可能，获取给定参数类型的类名
      *
      * From Reflector::getParameterClassName() in Illuminate\Support.
      *
@@ -53,12 +55,14 @@ class Util
     {
         $type = $parameter->getType();
 
+        // 检查它是否是内置类型
         if (! $type instanceof ReflectionNamedType || $type->isBuiltin()) {
             return null;
         }
 
         $name = $type->getName();
 
+        // 获取声明类
         if (! is_null($class = $parameter->getDeclaringClass())) {
             if ($name === 'self') {
                 return $class->getName();

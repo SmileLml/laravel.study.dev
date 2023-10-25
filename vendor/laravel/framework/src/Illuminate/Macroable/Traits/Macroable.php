@@ -30,6 +30,7 @@ trait Macroable
 
     /**
      * Mix another object into the class.
+     * 将另一个对象混合到类中.
      *
      * @param  object  $mixin
      * @param  bool  $replace

@@ -335,6 +335,7 @@ class ClassLoader
     /**
      * Turns off searching the prefix and fallback directories for classes
      * that have not been registered with the class map.
+     * 关闭对未在类映射中注册的类的前缀目录和回退目录的搜索
      *
      * @param bool $classMapAuthoritative
      *
@@ -347,6 +348,7 @@ class ClassLoader
 
     /**
      * Should class lookup fail if not found in the current class map?
+     * 如果在当前类映射中找不到，类查找是否应该失败?
      *
      * @return bool
      */
@@ -468,6 +470,7 @@ class ClassLoader
 
         if (false === $file) {
             // Remember that this class does not exist.
+            // 记住，这个类并不存在.
             $this->missingClasses[$class] = true;
         }
 
@@ -491,6 +494,7 @@ class ClassLoader
      */
     private function findFileWithExtension($class, $ext)
     {
+//        var_dump($class,$ext,__LINE__);die;
         // PSR-4 lookup
         $logicalPathPsr4 = strtr($class, '\\', DIRECTORY_SEPARATOR) . $ext;
 

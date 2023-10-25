@@ -533,6 +533,7 @@ if (! function_exists('method_field')) {
 if (! function_exists('mix')) {
     /**
      * Get the path to a versioned Mix file.
+     * 获取版本化Mix文件的路径
      *
      * @param  string  $path
      * @param  string  $manifestDirectory

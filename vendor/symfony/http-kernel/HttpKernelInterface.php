@@ -32,9 +32,11 @@ interface HttpKernelInterface
 
     /**
      * Handles a Request to convert it to a Response.
+     * 处理请求以将其转换为响应.
      *
      * When $catch is true, the implementation must catch all exceptions
      * and do its best to convert them to a Response instance.
+     * 当$catch为true时,实现必须捕获所有异常,并尽最大努力将它们转换为Response实例.
      *
      * @param int  $type  The type of the request
      *                    (one of HttpKernelInterface::MAIN_REQUEST or HttpKernelInterface::SUB_REQUEST)

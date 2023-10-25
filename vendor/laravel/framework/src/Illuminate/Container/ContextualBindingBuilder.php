@@ -84,6 +84,7 @@ class ContextualBindingBuilder implements ContextualBindingBuilderContract
 
     /**
      * Specify the configuration item to bind as a primitive.
+     * 指定要绑定的配置项作为原语.
      *
      * @param  string  $key
      * @param  mixed  $default

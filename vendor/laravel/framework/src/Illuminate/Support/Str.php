@@ -392,6 +392,7 @@ class Str
 
     /**
      * Determine if a given string matches a given pattern.
+     * 确定给定字符串是否与给定模式匹配.
      *
      * @param  string|iterable<string>  $pattern
      * @param  string  $value
@@ -1300,6 +1301,7 @@ class Str
 
     /**
      * Determine if a given string starts with a given substring.
+     * 确定给定字符串是否以给定子字符串开头.
      *
      * @param  string  $haystack
      * @param  string|iterable<string>  $needles

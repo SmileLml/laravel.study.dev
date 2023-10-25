@@ -14,6 +14,7 @@ namespace Symfony\Component\Console\Input;
 /**
  * StreamableInputInterface is the interface implemented by all input classes
  * that have an input stream.
+ * StreamableInputInterface 是由所有具有输入流的输入类实现的接口.
  *
  * @author Robin Chalas <robin.chalas@gmail.com>
  */

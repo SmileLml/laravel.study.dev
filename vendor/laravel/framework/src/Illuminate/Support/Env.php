@@ -11,6 +11,7 @@ class Env
 {
     /**
      * Indicates if the putenv adapter is enabled.
+     * 显示putenv适配器是否已启用.
      *
      * @var bool
      */
@@ -18,6 +19,7 @@ class Env
 
     /**
      * The environment repository instance.
+     * 环境存储库实例.
      *
      * @var \Dotenv\Repository\RepositoryInterface|null
      */
@@ -47,6 +49,7 @@ class Env
 
     /**
      * Get the environment repository instance.
+     * 存储库
      *
      * @return \Dotenv\Repository\RepositoryInterface
      */
@@ -92,6 +95,7 @@ class Env
 
     /**
      * Get the possible option for this environment variable.
+     * 获取此环境变量的可能选项.
      *
      * @param  string  $key
      * @return \PhpOption\Option|\PhpOption\Some
